@@ -15,16 +15,16 @@ The VeriTrace gasless relayer and chain indexer:
 
 | Topic | Reference |
 | --- | --- |
-| Batching, tree construction, manifest | [ADR-0014](https://github.com/veritrace-platform/platform-infrastructure/blob/main/docs/adr/0014-on-chain-commitments.md) |
-| Job queue, nonce lock, speed-up, indexer | [ADR-0015](https://github.com/veritrace-platform/platform-infrastructure/blob/main/docs/adr/0015-gasless-relayer.md) |
-| Contract interface | [smart-contract.md](https://github.com/veritrace-platform/platform-infrastructure/blob/main/docs/contracts/smart-contract.md) |
-| Database (`veritrace_relayer`) | [data-model.md §5](https://github.com/veritrace-platform/platform-infrastructure/blob/main/docs/architecture/data-model.md#5-relayer-database-veritrace_relayer-schema-relayer-m2) |
-| Proof API | [rest-api.md §3.4](https://github.com/veritrace-platform/platform-infrastructure/blob/main/docs/contracts/rest-api.md#34-blockchain-relayer-service-m2) |
+| Batching, tree construction, manifest | [ADR-0014](https://github.com/veritrace-platform/veritrace/blob/main/docs/adr/0014-on-chain-commitments.md) |
+| Job queue, nonce lock, speed-up, indexer | [ADR-0015](https://github.com/veritrace-platform/veritrace/blob/main/docs/adr/0015-gasless-relayer.md) |
+| Contract interface | [smart-contract.md](https://github.com/veritrace-platform/veritrace/blob/main/docs/contracts/smart-contract.md) |
+| Database (`veritrace_relayer`) | [data-model.md §5](https://github.com/veritrace-platform/veritrace/blob/main/docs/architecture/data-model.md#5-relayer-database-veritrace_relayer-schema-relayer-m2) |
+| Proof API | [rest-api.md §3.4](https://github.com/veritrace-platform/veritrace/blob/main/docs/contracts/rest-api.md#34-blockchain-relayer-service-m2) |
 
 ## Service baseline
 
 The service follows the same baseline as the other Go services
-([ADR-0004](https://github.com/veritrace-platform/platform-infrastructure/blob/main/docs/adr/0004-go-service-baseline.md)).
+([ADR-0004](https://github.com/veritrace-platform/veritrace/blob/main/docs/adr/0004-go-service-baseline.md)).
 Its skeleton is taken from `core-business-service`:
 
 - `cmd/`, `internal/platform`, `internal/httpapi`, `migrations/`, `api/openapi.yaml`;
